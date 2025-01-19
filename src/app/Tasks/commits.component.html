@@ -1,0 +1,17 @@
+<h2>Recent Commits</h2>
+<ul>
+  <table>
+
+
+    <tr>
+      <th>Message</th>
+      <th>Author</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let commit of commits">
+      <td>{{ commit.commit.message }}</td>
+      <td>{{ commit.commit.author.name }}</td>
+      <td>{{ commit.commit.author.date }}</td>
+    </tr> 
+
+
